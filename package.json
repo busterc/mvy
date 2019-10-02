@@ -25,7 +25,7 @@
     "rename"
   ],
   "dependencies": {
-    "meow": "^3.7.0",
+    "meow": "^5.0.0",
     "mv": "^2.1.1"
   }
 }

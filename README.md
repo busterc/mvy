@@ -11,19 +11,37 @@ $ npm install mvy --global
 ## Usage
 
 ```sh
+
+$ mvy <source> ... <target>
+
+    Options
+
+      --force, -f  Overwrite existing target files
+
+```
+
+```sh
 # MAJOR KEY ALERT:
 #
-# 1. When the <target> has a trailing slash, 
+# 1. When the <target> has a trailing slash,
 #    the <source> will be placed inside the <target>
 #
-# 2. When both the <source> and <target> have trailing slashes, 
+# 2. When both the <source> and <target> have trailing slashes,
 #    the *ENTIRE* <source> path will be appended to the <target> path
 #    and the <source> files will be placed inside the appended <target> path
+#
+# 3. Supports multiple sources and globs
 
 
 # move a file into a new directory
 $ mvy somewhere/exists/a.file yet/to/be/created/directory/
 # => yet/to/be/created/directory/a.file
+
+
+# move multiple files into a new directory
+$ mvy somewhere/exists/*.file yet/to/be/created/directory/
+# => yet/to/be/created/directory/a.file
+# => yet/to/be/created/directory/b.file
 
 
 # move a file into a new directory and rename the file
