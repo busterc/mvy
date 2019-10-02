@@ -6,7 +6,7 @@
   "license": "ISC",
   "repository": "busterc/mvy",
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "files": [
     "cli.js"
