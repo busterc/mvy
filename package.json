@@ -1,6 +1,6 @@
 {
   "name": "mvy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "mvy = mkdirp + mv // a cli for moving to a new directory",
   "author": "Buster Collings <busterc@gmail.com> (https://about.me/buster)",
   "license": "ISC",
